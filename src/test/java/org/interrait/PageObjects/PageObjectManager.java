@@ -8,6 +8,36 @@ public class PageObjectManager {
     LoginPage loginPage;
     PaymentMangementPage paymentMangementPage;
     DssPage dssPage;
+    EarningSummeryPage earningSummeryPage;
+    EarningDetails earningDetails;
+    DealerEarningStatement dealerEarningStatement;
+    ParameterManagement parameterManagement;
+    GenericObjectPage genericObjectPage;
+
+    public GenericObjectPage getGenericObjectPage() {
+        genericObjectPage =new GenericObjectPage(driver);
+        return genericObjectPage;
+    }
+
+    public ParameterManagement getParameterManagement() {
+        parameterManagement = new ParameterManagement(driver);
+        return parameterManagement;
+    }
+
+    public DealerEarningStatement getDealerEarningStatement() {
+        dealerEarningStatement = new DealerEarningStatement(driver);
+        return dealerEarningStatement;
+    }
+
+    public EarningDetails getEarningDetails() {
+        earningDetails = new EarningDetails(driver);
+        return earningDetails;
+    }
+
+    public EarningSummeryPage getEarningSummeryPage() {
+        earningSummeryPage = new EarningSummeryPage(driver);
+        return earningSummeryPage;
+    }
 
     public DssPage getDssPage() {
         dssPage = new DssPage(driver);

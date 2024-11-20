@@ -23,6 +23,7 @@ public class TestBase {
         Properties prop = new Properties();
         prop.load(fis);
         url = prop.getProperty("QAUrl");
+
         String browser = prop.getProperty("browser");
 //  String browser = browser_maven!=null ? browser_maven : browser_properties;
         if(driver == null)

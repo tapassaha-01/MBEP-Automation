@@ -28,6 +28,7 @@ public class LoginPage {
         driver.get(Url);
     }
     public LandingPage loginApplicaiton(String username,String pass){
+//        driver.manage().deleteAllCookies();
         this.username.sendKeys(username);
         this.password.sendKeys(pass);
         this.submitbtn.click();

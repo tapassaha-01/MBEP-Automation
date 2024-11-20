@@ -65,7 +65,7 @@ public class CommonStep {
                 dssPage.getPOP_UP_3_btn().click();
             }
         } catch (NoSuchElementException e) {
-            logger.info("Pop-up button not found.");
+            logger.info("Login has some issue..{}",e.getMessage());
         }
     }
 
